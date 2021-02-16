@@ -1,10 +1,10 @@
 # Registration
 
 ## Table of contents
-* [General info]
-* [Technologies] 
-* [Sources] 
-* [Status]
+* General info
+* Technologies
+* Sources
+* Status
 
 ## General info
 This project is simple registration page for a dating website. Created for practice during front-end developer course at Akademia Kodu.
