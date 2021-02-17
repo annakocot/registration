@@ -1,9 +1,13 @@
 @import "reset.css";
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 100vh;  /*kłopoty*/
     font-family: 'Lato', sans-serif;
     background-color: #0A8989;
 }
@@ -16,11 +20,11 @@ a {
 .container {
     display: flex;
     justify-content: flex-end;
-    width: 80%;
+    max-width: 120rem;
     height: 90vh;
     margin: auto;
-    border-radius: 15px;
-    background-image: url(../img/zdjecie.png);
+    border-radius: 1.5rem;
+    background-image: url("../img/zdjecie.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -29,15 +33,15 @@ a {
 .title {
     align-self: flex-end;
     width: 60%;
-    margin-left: 30px;
-    margin-bottom: 30px;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
     color: #fff;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: bold;
     opacity: 60%;
 }
 
-.registration {
+#registration {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -45,56 +49,46 @@ a {
     width: 35%;
     height: 85vh;
     position: relative;
-    border-radius: 15px;
-    justify-content: column;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 20px;
+    border-radius: 1.5rem;
+    margin: auto 2rem;
     background-color: #fff;
+    background-image: url('/img/MaskGroup1.svg'), url('/img/MaskGroup2.svg');
+    background-repeat: no-repeat;
+    background-position: top left, bottom left;
 }
 
-.registration h2 {
-    margin-top: 50px;
+#registration h1 {
+    margin-top: 5rem;
     align-self: center;
-    padding: 10px;
-    font-size: 35px;
+    padding: 1rem;
+    font-size: 3.5rem;
     font-weight: bold;
     color: #0A8989;
 }
 
-.registration::before {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    content: "";
-    background-image: url(../img/MaskGroup1.svg);
-}
-
 .fab {
-    padding: 10px;
+    padding: 1rem;
 }
 
-#apple-log {
-    border-radius: 10px;
+.apple-button {
+    border-radius: 1rem;
     background-color: #000;
     color: #fff;
-    font-size: 14px;
+    font-size: 1.4rem;
     border: none;
-    padding: 10px;
-    margin: 8px auto;
+    padding: 1rem;
+    margin: .8rem auto;
     width: 90%;
     text-transform: uppercase;
     font-weight: 500;
 }
 
-#facebook-log {
-    border-radius: 10px;
+.facebook-button {
+    border-radius: 1rem;
     background-color: #3A5998;
     color: #fff;
-    font-size: 14px;
-    padding: 10px;
+    font-size: 1.4rem;
+    padding: 1rem;
     border: none;
     margin: 0 auto;
     width: 90%;
@@ -107,105 +101,102 @@ a {
     align-items: center;
     text-align: center;
     font-weight: 500;
-    font-size: 13px;
-    margin: 10px;
-    padding: 2px;
+    font-size: 1.3rem;
+    margin: 10rem;
+    padding: .2rem;
 }
 
 .separator::before {
-    content: '';
+    content: "";
     flex: 1;
-    border-bottom: 1.5px solid #0A8989;
-    margin-right: 0.5em;
+    border-bottom: .15rem solid #0A8989;
+    margin-right: .5em;
 }
 
 .separator::after {
-    content: '';
+    content: "";
     flex: 1;
-    border-bottom: 1.5px solid #0A8989;
-    margin-left: 0.5em;
+    border-bottom: .15rem solid #0A8989;
+    margin-left: .5em;
 }
 
 input {
-    font-size: 21px;
+    display: block;
+    margin: .2rem auto;
+    font-size: 2.1rem;
     width: 90%;
-    height: 20px;
-    padding: 10px;
-    margin: 2px;
-    border-radius: 10px;
-    border-style: hidden;
+    height: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
     opacity: 70%;
     background-color: #EAEAEA;
 }
 
-#next-button {
+.next-button {
     width: 40%;
-    height: 50px;
+    height: 5rem;
     background-color: #0A8989;
     color: #fff;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: bold;
     border: none;
-    padding: 10px;
-    border-radius: 15px;
-    margin: 10px auto;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin: 1rem auto;
 }
 
 .registration p {
-    font-size: 19px;
-    margin: 5px auto;
+    font-size: 1.9rem;
+    margin: .5rem auto;
     align-self: flex-end;
 }
 
-#login {
+.login-link {
     color: #0A8989;
     text-decoration: none;
 }
 
-hr {
-    border-bottom: 1px solid #ebe8e8;
-    width: 99%;
-}
-
-#agreement {
+.agreement-box {
+    border-top: .2rem solid #ebe8e8;
     color: #4F5A5A;
-    font-size: 13px;
-    margin: 5px;
+    font-size: 1.3rem;
+    margin: .5rem;
 }
 
 .description {
     margin-top: auto;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
-.registration::after {
-    content: "";
-    background-image: url("../img/MaskGroup2.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
+
+
+@media screen and (max-width: 1200px) {
+
+    #registration {
+        width: 50%;
+    }
+
 }
 
-@media (max-width: 1100px) {
+@media screen and (max-width: 960px) {
+
+    #registration {
+        width: 80%;
+        height: 95%;
+    }
+}
+
+
+@media (max-width: 760px) {
+
     .container {
+        display: flex;
         flex-direction: column;
     }
 
-    .title {
-        align-self: flex-start;
-    }
-
-    .sign-in-form {
-        width: 70%;
-        margin: auto;
-    }
-
-    .next {
-        margin: auto;
+    #registration {
+        width: 90%;
+        height: 70%;
     }
 }
