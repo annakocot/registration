@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
@@ -13,23 +15,24 @@
 <body>
     <div class="container">
         <div class="title">Rear window (1995) by Alfred Hitchcock</div>
-        <div class="registration">
-            <h2>Sign up</h2>
-            <a href="#" id="apple-log"><span class="fab fa-apple"></span>Sign up with Apple</a>
-            <a href="#" id="facebook-log"><span class="fab fa-facebook-f"></span>Sign up with Facebook</a>
-            <div class="separator">or</div>
+        <div id="registration">
+            <h1>Sign up</h1>
+            <a href="#" class="apple-button"><span class="fab fa-apple"></span>Sign up with Apple</a>
+            <a href="#" class="facebook-button"><span class="fab fa-facebook-f"></span>Sign up with Facebook</a>
+            <span class="separator">or</span>
             <form>
                 <input type="email" id="email" name="user_email" placeholder="E-mail adress" required>
                 <input type="password" id="password" name="user_password" placeholder="Password" required>
-                <input type=submit value="Next" id="next-button">
+                <input type="submit" value="Next" id="next-button" class="next-button">
             </form>
             <div class="description">
-                <p>Already registered? <a id="login" href="#">Log in</a></p>
-                <hr>
-                <p id="agreement">
-                    By clicking on next, you acknowledge that you have read and accepted the
-                    <a id="terms" href="#">Terms of Service and Privacy Policy</a>
-                </p>
+                <p>Already registered? <a id="login-link" href="#">Log in</a></p>
+                <div class="agreement-box">
+                    <p>
+                        By clicking on next, you acknowledge that you have read and accepted the
+                        <a href="#">Terms of Service and Privacy Policy</a>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
